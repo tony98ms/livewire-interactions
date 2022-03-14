@@ -9,8 +9,12 @@ class LivewireFollow extends Component
 {
     public $current_user;
     public $user;
-    public function mount($user)
+    public $follow_class;
+    public $unfollow_class;
+    public function mount($user, $follow_class = null, $unfollow_class = null)
     {
+        $this->follow_class = $follow_class ?? config('livewire-interaction.options.bootstrap.follow_class', 'btn btn-info btn-block btn-sm');
+        $this->unfollow_class = $unfollow_class ?? config('livewire-interaction.options.bootstrap.unfollow_class', 'btn btn-danger btn-block btn-sm');
         $this->user = $user;
         $this->current_user = Auth::user();
         $this->checkFollowing();

@@ -6,7 +6,8 @@ return [
     'template' => 'bootstrap',
     'options' => [
         'bootstrap' => [
-            'class' => 'btn btn-danger btn-block btn-sm'
+            'follow_class' => 'btn btn-info btn-block btn-sm',
+            'unfollow_class' => 'btn btn-danger btn-block btn-sm'
         ],
         'tailwind' => [
             'class' => ''
