@@ -11,6 +11,6 @@ class LivewireInteractionFacade extends Facade
 
     protected static function getFacadeAccessor()
     {
-        return 'laravel-interaction';
+        return 'livewire-interaction';
     }
 }
