@@ -1,5 +1,7 @@
 # Livewire Interactions
 
+[![Latest Stable Version](http://poser.pugx.org/tonystore/livewire-interactions/v)](https://packagist.org/packages/tonystore/livewire-interactions)  [![Total Downloads](http://poser.pugx.org/tonystore/livewire-interactions/downloads)](https://packagist.org/packages/tonystore/livewire-interactions)  [![License](http://poser.pugx.org/tonystore/livewire-interactions/license)](https://packagist.org/packages/tonystore/livewire-interactions)  [![PHP Version Require](http://poser.pugx.org/tonystore/livewire-interactions/require/php)](https://packagist.org/packages/tonystore/livewire-permission)
+
 Package to generate interactions in a Laravel application with Livewire.
 ## REQUIREMENTS
 -   [PHP >= 7.4](http://php.net)
