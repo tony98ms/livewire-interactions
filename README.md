@@ -63,10 +63,10 @@ To use the follow and unfollow component, you can add it anywhere in your code a
  <body> 
 
     //INSERT COMPONENT
-    <livewire:follow :user="$user" />
+    <livewire:follow :user="$user" :wire:key="$user->id" />
 
     //OR BLADE DIRECTIVE
-    @livewire('follow', ['user' => $jugador])
+    @livewire('follow', ['user' => $jugador], key($user->id))
   
     //The user parameter is mandatory.
  </body>
