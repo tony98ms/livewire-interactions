@@ -4,7 +4,7 @@
             @if ($following)
                 <button wire:loading.attr="disabled" wire:target="follow_user, unfollow_user" class="{{ $unfollow_class }}"
                     wire:click.prevent="unfollow_user">
-                    <i class="{{ $follow_icon }}"></i>
+                    <i class="{{ $unfollow_icon }}"></i>
                     @if (!$only_icon)
                         @lang('Unfollow')
                     @endif
@@ -12,7 +12,7 @@
             @else
                 <button wire:loading.attr="disabled" wire:target="unfollow_user, follow_user" class="{{ $follow_class }}"
                     wire:click.prevent="follow_user">
-                    <i class="{{ $unfollow_icon }}"></i>
+                    <i class="{{ $follow_icon }}"></i>
                     @if (!$only_icon)
                         @lang('Follow')
                     @endif
